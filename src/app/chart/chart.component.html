@@ -1,0 +1,9 @@
+<p class="text-center" [hidden]="hideTimeOut">
+    API connection timed out!
+</p>
+<div [hidden]="hideChart">
+    <button class="btn btn-primary" (click)="onBackClick(); $event.preventDefault()" type="button">Back</button>
+    <div>
+        <canvas id="chart">{{ chart }}</canvas>
+    </div>
+</div>
